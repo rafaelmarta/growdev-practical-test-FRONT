@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+    --font-family: "Roboto", sans-serif;
+    --font-normal: 400;
+    --font-bold: 700;
+    --font-bolder: 850;
+    --bg-color: #373737;
+    --primary-color: #8c8c8c;
+    --secondary-color: #e1e1e1;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.25rem;
+    max-width: 65rem;
+    margin: auto;
+}
+
+.profile-picture {
+    height: 37rem;
+    width: 37rem;
+}
+
+.about-me {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px;
+    color: white;
+    text-align: center;
+}
+
+.about-me h2 {
+    margin-bottom: var(--bottom-margin);
+    font-weight: var(--font-bolder);
+}
+
+.about-me p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+    text-align: center;
+    font-weight: var(--font-normal);
+}
+
+#skills {
+    max-width: 70rem;
+    margin: auto;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+}
+
+.header {
+    margin-bottom: 1rem;
+    font-weight: var(--font-bolder);
+}
+
+.skills-wrap {
+    padding: 1.25rem;
+}
+
+.icon {
+    width: 11.2rem;
+    height: 11.25rem;
+}
+
+.icon-border {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.comment-box {
+    padding: 5px
+}
+
+.comment-area textarea {
+    resize: none;
+    border: 1px solid var(--secondary-color)
+}
+
+.form-comment {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.comment-section {
+    max-width: 70rem;
+    margin: auto;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+}
+
+#comments-list {
+    background: var(--primary-color);
+    max-width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.comment-name {
+    font-weight: var(--font-bold);
+    font-size: 20px;
+    border-bottom: 1px solid;
+}
+
+.comment-text {
+    font-size: 13px;
+    font-weight: var(--font-normal);
+    line-height: 18px;
+    color: black;
+    display: block;
+    background: var(--primary-color);
+    border-bottom: 1px solid;
+    padding: 15px 20px 20px 20px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+}
+
+.social-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.arrow-up {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media screen and (max-width: 720px){
+    .photo {
+        margin-top: -4rem;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .profile-picture {
+        height: 37.5rem;
+        width: 30rem;
+    }
+    
+    .icon {
+        width: 5.875rem;
+        height: 5.25rem;
+    }
+    
+
+    #comments-list {
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
